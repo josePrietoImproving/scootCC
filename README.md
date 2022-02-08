@@ -1,20 +1,14 @@
-# Fullstack Boilerplate (Angular/NestJS)
+# Frontend Boilerplate (Angular)
 
 A backbone for your coding challenge.
 
 ## Contents
 
-- [Backend service](app-backend) - a NestJS service with a `/ping` endpoint. Extend with your code.
 - [Frontend app](app-frontend) - an Angular app. Extend with your code.
 - [E2E test suites](cypress/integration) - a backend and a frontend Cypress test suites. Extend with your tests.
 - [Pipeline](.github/workflows/tests.yml) - a test Runner that executes the Cypress tests on push to a branch other than `master`/`main`.
 
 ## Tech Stack
-
-### Backend
-
-- NestJS 7.6.15
-- Typescript 4.2.3
 
 #### Additional libs
 
@@ -42,18 +36,14 @@ A backbone for your coding challenge.
 
 ```bash
 npm install
-npm run build # both backend and frontend
-npm run build:backend # only backend
-npm run build:frontend # only frontend
+npm run build
 ```
 
 3. Start your app.
 
 ```bash
 npm install
-npm run start # both backend and frontend
-npm run start:backend # only backend
-npm run start:frontend # only frontend
+npm run start
 ```
 
 4. Run the Cypress tests.
