@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "app-frontend"
+  "cli": {
+    "analytics": false
+  }
 }
