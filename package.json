@@ -2,7 +2,7 @@
   "name": "frontend-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd app-frontend && npm install && npm run build",
+    "build": "cd app-frontend && npm install && npm run start",
     "start": "cd app-frontend && npm run start",
     "test": "cypress run"
   },

@@ -1,0 +1,31 @@
+<div class="flex md:flex-row-reverse flex-wrap">
+  <div class="w-full md:w-3/4">
+    <div *ngFor="let item of todoList" class="w-7/8 rounded shadow-lg">
+      <div class="px-6 py-4">
+        <p class="text-gray-700 text-right">
+          {{ item.priority }}
+        </p>
+        <div class="font-bold text-xl mb-2">{{ item.description }}</div>
+        <p class="text-gray-700 text-base">
+          Due {{ item.dueDate | date : "MMM-dd-yy" }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="w-full md:w-1/4">
+    <input
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      type="text"
+      [(ngModel)]="descriptionQuery"
+      placeholder="Search by Description (Case sensitive)"
+      (ngModelChange)="findItems()"
+    />
+    <br />
+    <input
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      type="number"
+      [(ngModel)]="priorityQuery"
+      placeholder="Search by Priority"
+    />
+  </div>
+</div>
